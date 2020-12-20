@@ -444,7 +444,8 @@ typedef struct  _VADecPictureParameterBufferAV1
     } pic_info_fields;
 
     /** \brief Supper resolution scale denominator.
-     *  value range [9..16]
+     *  When use_superres=1, value range [9..16].
+     *  When use_superres=0, denominator value will be 8.
      */
     uint8_t                 superres_scale_denominator;
 
